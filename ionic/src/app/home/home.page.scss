@@ -1,0 +1,38 @@
+*{
+    font-family:'Roboto', sans-serif;
+}
+
+
+.menu
+{
+    height: 100%;
+    width:  100%;
+    background : url('../../assets/images/food.jpg') no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+.presentation{
+	z-index:999;
+	position:absolute;
+	height:200px;
+	width:300px;
+	left:50%;
+	margin-left:-150px;
+	top:50%;
+	margin-top:-150px;
+}
+
+.para1{
+    font-size: 18px;
+    color: #fff;
+    // margin: 50px auto  ;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.footer{
+    text-align: center ;
+    font-size: 15px;
+}

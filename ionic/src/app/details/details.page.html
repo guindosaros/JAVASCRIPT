@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu/{{information.categorie}}"></ion-back-button>
+    </ion-buttons>
+    <ion-title> {{information.nom_recette}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="content">
+    <ion-grid>
+      <ion-row>
+        <ion-col> <img src="../../assets/images/recette/{{information.image}}"></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h1 class="titre">{{information.nom_recette}}</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+             <ion-item>
+               <ul class="liste">
+                 <li *ngFor='let liste of  cuisine' >  <p>{{ liste }}</p> </li>
+               </ul>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

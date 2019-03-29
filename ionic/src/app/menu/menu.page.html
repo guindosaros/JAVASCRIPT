@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="principal"> Recette de {{ categorie }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-list *ngFor='let rec of  recette'> 
+   <ion-item  (click)="Choix(rec.id_recette)">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/recette/{{rec.image}}">
+      </ion-avatar>
+      <ion-label class="titre" >{{ rec.nom_recette }}
+          <ion-label class='sous-titre'> {{ rec.descri }}}</ion-label>
+      </ion-label>
+      
+      <ion-badge slot="end" color="success">{{ rec.temps}}</ion-badge>
+   </ion-item>
+</ion-list>
+</ion-content>
